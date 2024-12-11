@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio personal</title>
 </head>
-<body>
+<body style="background-image: url(img/fondo.jpg); background-repeat: no-repeat; background-size: cover;">
     <header>
         <!--IMAGE-->
+        <img src="img/me.jpg" width="500" alt="soy yo">
         <h1 style="text-align: center; font-style: inherit;">Sanchez Zamora Reynathan</h1>
-        <p>Estudiante de Ingeniería en Sistemas  | Deportes | CYBERSEGURIDAD </p>
+        <p style="text-align: center;">Estudiante de Ingeniería en Sistemas  | Deportes | CYBERSEGURIDAD </p>
     </header>
-    <nav>
+    <nav style="text-align: center; font-size: larger;">
         <a href="#sobre-mi">Sobre mí</a>
-        <a href="#experiencia">Experiencia</a>
+        <a href="#experiencia">Mis proyectos</a>
         <a href="#idiom">Idiomas</a>
         <a href="#Proyectos">Proyectos</a>
         <a href="#Educacion">Educación</a> 
@@ -26,27 +27,82 @@
         </section>
         <section id="experiencia">
             <!--titulo de la sección experiencia-->
-            <h2>Experiencia</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ea!</p>
+            <h2>Mis proyectos</h2>
+            <article>
+                <h3><strong><a href="https://github.com/Fak3M3/HTML">Entra a mi GIt-hub</a></strong></h3>
+                <h3>Desarrollador Front-End del proyecto Pactica</h3>
+                <p>| Enero 2019 - Diciembre 2019 |</p>
+                <ul>
+                    <li>Desarrollador de interfaces responsivas usando html, css y javascript</li>
+                    <li>Colaboracion con equipos de diseño web</li>
+                    <li>Diseño de aplicacion mobil e interfaz</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Desarrollador front-end del proyecto SATPIT</h3>
+                <p>| enero 2024 - junio 2024 |</p>
+                <ul>
+                    <li>Desarrollador de interfaces responsivas usando html, css y javascript</li>
+                    <li>Elaboracion completa del sitio web</li>
+                    <li>Diseño de la base de datos con forme al sitio web</li>
+                </ul>
+            </article>
         </section>
         <section id="idiom">
             <!--titulo de idiomas-->
             <h2>Idiomas</h2>
             <ul>
-                <il>Ingles B1</il>
-                <il>Frances B1</il>
+                <li>Ingles B1</li>
+                <li>Frances B1</li>
             </ul>
-        </section>
-        <section id="Proyectos">
-            <!--titulo de mis proyectos-->
-            <h2>Proyectos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ea!</p>
         </section>
         <section id="Educacion">
             <!--titulo sobre mi educacion-->
-            <h2>Proyectos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ea!</p>
+            <h2>Educación</h2>
+            <h3>Escom</h3>
+            <ul>
+                <li>Ingeniería en sistemas cumputacionales | 2019----presente |</li>
+            </ul> 
+            <h3>DVEF</h3>
+            <ul>
+                <li> Master en frontend | 2024----presente |</li>
+            </ul> 
+            <h3>CECYT 9 JUAN DE DIOS BATIZ</h3>
+            <ul>
+                <li>Tecnico en programación | 2019---2022 |</li>
+            </ul>          
+        </section>
+        <section id="contact">
+            <h2>Contactame</h2>
+            <ul>
+                <li>Correo electronico: <a href="mailto:sanchezzamorareynathan@gmail.com">sanchezzamorareynathan@gmail.com</a></li>
+                <li>LinkedIN: <a href="https://mx.linkedin.com/" target="_blank" rel="noopener noreferrer">Linkedin personal</a> </li>
+                <li>Correo institucional: <a href="mailto:rsanchezz1901@alumno.ipn.mx">rsanchezz1901@alumno.ipn.mx</a></li>
+            </ul>
+
+            <p>!!!Hablame!!!</p>
+            <form>
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="nombre" required>
+                </div>
+                <br> <!--mala practica usa css-->
+                <div>
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="correo" required>
+                </div>
+                <br>
+                <div>
+                    <label for="message">Mensaje</label>
+                    <textarea type="message" id="message" name="message" row="4" required></textarea>
+                </div>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
+    <footer>
+        <p>&copy; derechos reservados para SANCHEZ ZAMORA REYNATHAN</p>
+    </footer>
 </body>
 </html>
