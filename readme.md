@@ -18,7 +18,7 @@ En este archivo presento mi primer **PORTAFOLIO PERSONAL**. En este repositorio 
 
     ## Sobre el codigo
 
-    Nada fuera lo normal en lo que cabe a una pagina web sencilla, en posteriores clases se le dara una mejor presentacion, lo mas resctable es:
+    Nada fuera lo normal en lo que cabe a una pagina web sencilla, en posteriores clases se le dara una mejor presentacion, lo mas rescatable es:
     ```
     <div>
                     <label for="message">Mensaje</label>
