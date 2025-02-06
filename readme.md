@@ -5,10 +5,13 @@
 - [Como ejecutar](#como-ejecutar)
 - [Sobre el codigo](#sobre-el-codigo)
 - [Cambios](#cambios-proximos)
+- [Actualizaciones](#Actualización)
 
 
 En este archivo presento mi primer **PORTAFOLIO PERSONAL**. En este repositorio se concentra:
- - Un archivo **index.html** 
+ - Un archivo **index.html**
+ - Un archivo **style.css**
+    >En donde se concentra el diseñp de la pagina web
  - Una carpeta **img** 
     >En donde se concentra la imagen del fondo **fondo.jpg** y lam imagen del dueño del repositorio el cual es: *Reynathan Sanchez Zamora*.
 
@@ -63,3 +66,7 @@ En este archivo presento mi primer **PORTAFOLIO PERSONAL**. En este repositorio 
             </form>
     ```
     > se dara un formato mas solido a la parte de los botones asi como a las del formulario
+
+    ## Actualización
+    
+    Se le dio prioridad al diseño y se le implemento un archivo **style.css** el cual nos permite añadir estilo y formato un poco mas profesional, eh de destacar que es solo un diseño basico para "probar" las nuevas herramientas, aún no esta terminando.
