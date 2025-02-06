@@ -1,0 +1,70 @@
+body{
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+nav{
+    text-align: center;
+    font-size: large;
+}
+a{
+    background-color: cornflowerblue;
+}
+
+a:hover{
+    background-color: darkgray;
+    scale: 1.5;
+}
+#titulo{
+    color: blue;
+}
+.SUB{
+    font-style: oblique;
+    color: deepskyblue;
+}
+#GIT{
+    font-style: oblique;
+    font-weight: bold;
+}
+#GITt{
+    background-color: rgb(17, 160, 122);
+}
+#GITt:hover{
+    background-color: rgb(218, 210, 109);
+    scale: 1.5;
+}
+#TXT{
+    font-style: italic;
+}
+#contacto{
+    background-color: rgb(136, 160, 208);
+}
+#contacto:hover{
+    background-color: grey;
+    scale: 1.5;
+}
+legend{
+    font-weight: bold;
+    color: blue;
+}
+#name:focus{
+    outline: 2px solid black;
+}
+#email:focus{
+    outline: 2px solid blue ;
+}
+#message:focus-visible{
+    outline: 4px dashed darkorange;   
+}
+
+button{
+    background-color: rgb(85, 85, 152);
+    font-size: medium;
+    font-weight: bold;
+}
