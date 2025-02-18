@@ -20,7 +20,7 @@
                 <a class="navB" href="#idiom">Idiomas</a>
             </div>
             <div id="menu">
-                <a class="navB" href="#educacion">Educación</a> 
+                <a class="navB" href="#edu">Educación</a> 
             </div>
             <div id="menu">
                 <a class="navB" href="#Contact">Contactame</a>
@@ -29,34 +29,103 @@
         </nav>
     </header>
     <main>
-        <section id="sobre-mi" class="banner">
-            <img id="Me" src="img/me.png" alt="">
-            <div>
-                <h1>👋 Hola, Yo soy Rey</h1>
-                <p>Soy estudiante de <strong>Ingeniería en Sistemas Computacionales</strong> con amplia experiencia en el uso de <i>TIC's</i>, especializado en la creación y diseño de sitios web. He demostrado mi capacidad para resolver problemas diversos y tengo experiencia trabajando bajo presión. Mi pasión por la tecnología y la innovación me impulsa a buscar constantemente oportunidades para contribuir y crecer en los equipos a los que pertenezco.</p>
+        <div id="sobre-mi" class="container">
+            <div class="left">
+                <img id="Me" src="img/me.png" alt="">
+                <div>
+                    <h1>👋 Hola, Yo soy Rey</h1>
+                    <p>Soy estudiante de <strong>Ingeniería en Sistemas Computacionales</strong> con amplia experiencia en el uso de <i>TIC's</i>, especializado en la creación y diseño de sitios web. He demostrado mi capacidad para resolver problemas diversos y tengo experiencia trabajando bajo presión. Mi pasión por la tecnología y la innovación me impulsa a buscar constantemente oportunidades para contribuir y crecer en los equipos a los que pertenezco.</p>
+                </div>    
             </div>
-        </section>
-        <section id="experiencia" class="banner">
-            <div>
-                <h1>Mis proyectos</h1>
+            <div class="right">  
+                <section id="experiencia" class="banner">
+                    <div>
+                        <h1>Mis proyectos</h1>
+                        <article>
+                            <h3 id="TXT">Desarrollador Front-End del proyecto Pactica | Enero 2019 - Diciembre 2019 |</h3>
+                            <ul>
+                                <li>Desarrollador de interfaces responsivas usando html, css y javascript</li>
+                                <li>Colaboracion con equipos de diseño web</li>
+                                <li>Diseño de aplicacion mobil e interfaz</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3 id="TXT">Desarrollador front-end del proyecto SATPIT | enero 2024 - junio 2024 | </h3>
+                            <ul>
+                                <li>Desarrollador de interfaces responsivas usando html, css y javascript</li>
+                                <li>Elaboracion completa del sitio web</li>
+                                <li>Diseño de la base de datos con forme al sitio web</li>
+                            </ul>
+                        </article>
+                    </div>
+                    
+                </section>
+                <section id="idiom" class="banner">
+                    <div>
+                        <h1>Idiomas</h1>
+                            <ul>
+                                <li>Ingles <strong>B1</strong></li>
+                                <li>Frances <strong>B1</strong></li>
+                            </ul>
+                    </div>
+                </section>
+                <section id="edu" class="banner">
+                    <div>
+                        <h1>Educación</h1>
+                            <h3 id="TXT"><i>ESCOM</i></h3>
+                                 <ul>
+                                    <li>Ingeniería en sistemas cumputacionales | 2022----presente |</li>
+                                </ul> 
+                            <h3 id="TXT"><i>DVEF</i></h3>
+                                <ul>
+                                    <li> Master en frontend | 2024----presente |</li>
+                                 </ul> 
+                            <h3 id="TXT"><i>CECYT 9 JUAN DE DIOS BATIZ</i></h3>
+                                <ul>
+                                    <li>Tecnico en programación | 2019---2022 |</li>
+                                </ul>             
+                    </div>
+                </section>
             </div>
-        </section>
-        <section id="idiom" class="banner">
-            <div>
-                <h1>Idiomas</h1>
-            </div>
-        </section>
-        <section id="#educacion" class="banner">
-            <div>
-                <h1>Mi formación academica</h1>
-            </div>
-        </section>
-</body>
+        </div>
+    </main>
 <footer>
     <section id="Contact" class="banner">
         <h1>Contactame</h1>
+            <br>
+            <ul>
+                <li>Correo electronico: <a id="contacto" href="mailto:sanchezzamorareynathan@gmail.com">sanchezzamorareynathan@gmail.com</a></li>
+                <li>LinkedIN: <a id="contacto" href="https://mx.linkedin.com/" target="_blank" rel="noopener noreferrer">Linkedin personal</a> </li>
+                <li>Correo institucional: <a id="contacto" href="mailto:rsanchezz1901@alumno.ipn.mx">rsanchezz1901@alumno.ipn.mx</a></li>
+            </ul>
+            <br>
+            <form method="post">
+                <fieldset>
+                    <legend>!!! CONTACTAME !!!</legend>
+                    <form>
+                        <br>
+                        <div>
+                            <label for="name">Nombre: </label>
+                            <input type="text" id="name" name="nombre" required>
+                        </div>
+                        <br> <!--mala practica usa css-->
+                        <div>
+                            <label for="email">Correo electronico: </label>
+                            <input type="email" id="email" name="correo" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="message">Mensaje: </label>
+                            <textarea type="message" id="message" name="message" row="4" required></textarea>
+                        </div>
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </fieldset>
+            </form>
     </section>
 </footer>
+</body>
 </html>
     
  
