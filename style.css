@@ -173,8 +173,54 @@ a:hover{
 #Contact{
     background-color: #ffffff;
     color: black;
-    display: block;
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    flex-direction: column;
 }
+
+#Contact a{
+    text-decoration: none;
+    width: 50px;
+    background-color: aliceblue;
+    height: 50px;
+    padding: 10px 0;
+}
+
+#links{
+    display: flex;
+    gap: 75px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+
+#email:hover{
+    scale: 1;
+}
+
+#email{
+    background-image: url();
+    background-color: transparent;
+    background-size: cover;
+}
+#link{
+    background-image: url();
+    background-color: transparent;
+    background-size: cover;
+}
+#poli{
+    background-image: url();
+    background-color: transparent;
+    background-size: cover;
+}
+
 
 form{
     text-align: left;
