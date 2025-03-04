@@ -12,26 +12,17 @@
             <span id="Name_icon"></span>
             <div id="menu">
                 <a class="navB" href="#sobre-mi">Sobre mí</a>
-            </div>
-            <div id="menu">
                 <a class="navB" href="#experiencia">Mis proyectos</a>
-            </div>
-            <div id="menu">
                 <a class="navB" href="#idiom">Idiomas</a>
-            </div>
-            <div id="menu">
                 <a class="navB" href="#edu">Educación</a> 
+                <a class="navB" href="#contacto">Contáctame</a>
             </div>
-            <div id="menu">
-                <a class="navB" href="#Contact">Contactame</a>
-            </div>
-            
         </nav>
     </header>
-    <main>
+    <main class="main-content">
         <div id="sobre-mi" class="container">
             <div class="left">
-                <img id="Me" src="img/me.png" alt="">
+                <img id="Me" src="img/me.png" alt="Foto de Rey">
                 <div>
                     <h1>👋 Hola, Yo soy Rey</h1>
                     <p>Soy estudiante de <strong>Ingeniería en Sistemas Computacionales</strong> con amplia experiencia en el uso de <i>TIC's</i>, especializado en la creación y diseño de sitios web. He demostrado mi capacidad para resolver problemas diversos y tengo experiencia trabajando bajo presión. Mi pasión por la tecnología y la innovación me impulsa a buscar constantemente oportunidades para contribuir y crecer en los equipos a los que pertenezco.</p>
@@ -39,96 +30,76 @@
             </div>
             <div class="right">  
                 <section id="experiencia" class="banner">
-                    <div>
-                        <h1>Mis proyectos</h1>
-                        <article>
-                            <h3 id="TXT">Desarrollador Front-End del proyecto Pactica | Enero 2019 - Diciembre 2019 |</h3>
-                            <ul>
-                                <li>Desarrollador de interfaces responsivas usando html, css y javascript</li>
-                                <li>Colaboracion con equipos de diseño web</li>
-                                <li>Diseño de aplicacion mobil e interfaz</li>
-                            </ul>
-                        </article>
-                        <article>
-                            <h3 id="TXT">Desarrollador front-end del proyecto SATPIT | enero 2024 - junio 2024 | </h3>
-                            <ul>
-                                <li>Desarrollador de interfaces responsivas usando html, css y javascript</li>
-                                <li>Elaboracion completa del sitio web</li>
-                                <li>Diseño de la base de datos con forme al sitio web</li>
-                            </ul>
-                        </article>
-                    </div>
-                    
+                    <h1>Mis proyectos</h1>
+                    <article>
+                        <h3>Desarrollador Front-End del proyecto Pactica | Enero 2019 - Diciembre 2019 |</h3>
+                        <ul>
+                            <li>Desarrollo de interfaces responsivas usando HTML, CSS y JavaScript.</li>
+                            <li>Colaboración con equipos de diseño web.</li>
+                            <li>Diseño de aplicación móvil e interfaz.</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3>Desarrollador front-end del proyecto SATPIT | Enero 2024 - Junio 2024 |</h3>
+                        <ul>
+                            <li>Desarrollo de interfaces responsivas usando HTML, CSS y JavaScript.</li>
+                            <li>Elaboración completa del sitio web.</li>
+                            <li>Diseño de la base de datos conforme al sitio web.</li>
+                        </ul>
+                    </article>
                 </section>
                 <section id="idiom" class="banner">
-                    <div>
-                        <h1>Idiomas</h1>
-                            <ul>
-                                <li>Ingles <strong>B1</strong></li>
-                                <li>Frances <strong>B1</strong></li>
-                            </ul>
-                    </div>
+                    <h1>Idiomas</h1>
+                    <ul>
+                        <li>Inglés <strong>B1</strong></li>
+                        <li>Francés <strong>B1</strong></li>
+                    </ul>
                 </section>
                 <section id="edu" class="banner">
+                    <h1>Educación</h1>
                     <div>
-                        <h1>Educación</h1>
-                            <h3 id="TXT"><i>ESCOM</i></h3>
-                                 <ul>
-                                    <li>Ingeniería en sistemas cumputacionales | 2022----presente |</li>
-                                </ul> 
-                            <h3 id="TXT"><i>DVEF</i></h3>
-                                <ul>
-                                    <li> Master en frontend | 2024----presente |</li>
-                                 </ul> 
-                            <h3 id="TXT"><i>CECYT 9 JUAN DE DIOS BATIZ</i></h3>
-                                <ul>
-                                    <li>Tecnico en programación | 2019---2022 |</li>
-                                </ul>             
+                        <h3><i>ESCOM</i></h3>
+                        <ul>
+                            <li>Ingeniería en Sistemas Computacionales | 2022 - Presente</li>
+                        </ul> 
+                        <h3><i>DVEF</i></h3>
+                        <ul>
+                            <li>Master en Frontend | 2024 - Presente</li>
+                        </ul> 
+                        <h3><i>CECYT 9 JUAN DE DIOS BATIZ</i></h3>
+                        <ul>
+                            <li>Técnico en Programación | 2019 - 2022</li>
+                        </ul> 
+                    </div>            
+                </section>
+                <section id="contacto" class="banner">
+                    <h1>Contáctame</h1>
+                    <div id="links"> 
+                        <a href="#" id="email" class="icon"></a>
+                        <a href="#" id="link" class="icon"></a>
+                        <a href="#" id="poli" class="icon"></a>
                     </div>
+                    <form method="post" class="formulario">
+                        <fieldset>
+                            <legend>¡CONTACTAME!</legend>
+                            <div>
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="nombre" required>
+                            </div>
+                            <div>
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" name="correo" required>
+                            </div>
+                            <div>
+                                <label for="message">Mensaje:</label>
+                                <textarea id="message" name="mensaje" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+                    </form>
                 </section>
-                <section id="contact" class="banner">
-                    <footer>
-                        <section id="Contact" class="banner">
-                            <h1>Contactame</h1>
-                                <div id="links"> 
-                                    <a href="#" id="email" class="icon"></a>
-                                    <a href="#" id="link" class="icon"></a>
-                                    <a href="#" id="poli" class="icon"></a>
-                                </div>
-                                
-                                <form method="post" class="formulario">
-                                    <fieldset>
-                                        <legend>!!! CONTACTAME !!!</legend>
-                                        <form>
-                                            <br>
-                                            <div>
-                                                <label for="name">Nombre: </label>
-                                                <input type="text" id="name" name="nombre" required>
-                                            </div>
-                                            <br> <!--mala practica usa css-->
-                                            <div>
-                                                <label for="email">Correo electronico: </label>
-                                                <input type="email" id="email" name="correo" required>
-                                            </div>
-                                            <br>
-                                            <div>
-                                                <label for="message">Mensaje: </label>
-                                                <textarea type="message" id="message" name="message" row="4" required></textarea>
-                                            </div>
-                                            <br>
-                                            <button type="submit">Enviar</button>
-                                        </form>
-                                    </fieldset>
-                                </form>
-                        </section>
-                    </footer>
-                </section>
-                
             </div>
         </div>
     </main>
-
 </body>
 </html>
-    
- 

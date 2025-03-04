@@ -13,10 +13,6 @@ header{
     padding: 0;
 }
 
-/* ul{
-    list-style: none;
-} */
-
 div #Me{
     display: flex;
     width: 250px;
@@ -34,6 +30,7 @@ div #Me{
     flex-direction: row;
     height: 100vh;
     margin-top: 5%;
+    overflow: hidden;
 }
 
 .left{
@@ -46,19 +43,18 @@ div #Me{
     color: white;
     padding: 20px;
     width: 40%;
-    
 }
 
 .right{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
-    overflow-y: scroll;
-    
+    padding: 50px;
+    height: 100%;
+    flex: 1;
+    background-color: white;
+    overflow-y: auto;
 }
-
-
 
 nav{
     height: 100%;
@@ -79,7 +75,6 @@ nav{
     background-size: cover;
     padding: 0 25px;
     vertical-align: middle;
-    
 }
 
 #menu{
@@ -91,13 +86,12 @@ nav{
 a{
     color: black;
     text-decoration: none;
-
 }
 
 .navB{
     display: inline-block;
     font-weight: bold;
-    font-family: SoDo Sans,Helvetica,Arial,sans-serif;
+    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
     padding: 0 25px;
 }
 
@@ -105,13 +99,8 @@ a{
     color: #30b3e3;
 }
 
-#contacto{
-    color: cornflowerblue;
-}
-
-#contacto:hover{
-    color: #5927e3;
-    border: none;
+#links a:hover{
+    scale: 1;
 }
 
 a:hover{
@@ -122,6 +111,7 @@ a:hover{
 
 .banner{
     display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     align-items: flex-start;
@@ -129,40 +119,41 @@ a:hover{
 }
 .banner h1{
     font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .left h1, .left p{
     vertical-align: middle;
     margin-bottom: 25px;
-    font-family: SoDo Sans,Helvetica,Arial,sans-serif;
+    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
 }
 
 .banner h1, .banner p{
     vertical-align: middle;
     text-align: left;
     margin-bottom: 25px;
-    font-family: SoDo Sans,Helvetica,Arial,sans-serif;
+    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
 }
 .banner h3{
-    font-family: SoDo Sans,Helvetica,Arial,sans-serif;
+    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
     text-align: left;
     font-size: smaller;
     color: #636262;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .banner ul{
-    font-family: SoDo Sans,Helvetica,Arial,sans-serif;
+    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
     text-align: left;
     margin-bottom: 20px;
 }
 
 .banner p{
     font-size: 18px;
-    font-family: SoDo Sans,Helvetica,Arial,sans-serif;
+    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
     line-height: 25px;
 }
-
 
 #idiom{
     background-color: rgb(255, 254, 254);
@@ -201,10 +192,6 @@ a:hover{
     padding: 10px 20px;
 }
 
-#email:hover{
-    scale: 1;
-}
-
 #email{
     background-image: url();
     background-color: transparent;
@@ -221,8 +208,72 @@ a:hover{
     background-size: cover;
 }
 
-
 form{
     text-align: left;
     align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        justify-content: center;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .left, .right{
+        width: 100%;
+    }
+
+    .container{
+        flex-direction: column; /* Ajuste a columnas */
+        margin-top: 90px;
+        height: auto;
+    }
+
+    .main-content{
+        flex-direction: column;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-y: visible;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #1764ea;
+        color: white;
+        padding: 20px;
+        width: 40%;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px;
+        height: 100%;
+        flex: 1;
+        background-color: white;
+        overflow-y: auto;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row; /* Ajuste a filas */
+        height: 100vh;
+        margin-top: 5%;
+        overflow: hidden;
+    }
 }
