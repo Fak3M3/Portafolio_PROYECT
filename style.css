@@ -100,10 +100,10 @@ a{
 }
 
 #links a:hover{
-    scale: 1;
+    transform: scale(1.5);
 }
 
-a:hover{
+#menu a:hover{
     border-bottom: 6px solid #1764ea;
     color: #27a4e3;
     padding-bottom: 10px;
@@ -193,24 +193,83 @@ a:hover{
 }
 
 #email{
-    background-image: url();
+    background-image: url(./img/gmail.png);
     background-color: transparent;
     background-size: cover;
-}
-#link{
-    background-image: url();
-    background-color: transparent;
-    background-size: cover;
-}
-#poli{
-    background-image: url();
-    background-color: transparent;
-    background-size: cover;
+    height: 40px;
+    width: 40px;
 }
 
-form{
-    text-align: left;
-    align-items: center;
+#link{
+    background-image: url(./img/linkedin.png);
+    background-color: transparent;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+#poli{
+    background-image: url(./img/ipn.png);
+    background-color: transparent;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+
+.formulario{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 10px 15px #1764ea;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend{
+    font-size: 1.5em;
+    color: #1764ea;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+}
+
+.grid-container label {
+    align-self: center;
+}
+
+.grid-container input,
+.grid-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #1764ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004aab;
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 768px){
@@ -242,6 +301,32 @@ form{
         width: 100%;
         overflow-y: visible;
         height: auto;
+    }
+
+    #Contact {
+        flex-direction: column;
+        align-items: self-start ;
+    }
+
+
+    #Contact a {
+        width: auto;
+        padding: 20px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    #links {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .formulario{
+        justify-content: center;
+        width: auto;
     }
 }
 
