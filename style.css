@@ -317,6 +317,27 @@ button:hover {
 
 }
 
+@keyframes colorChange{
+    0% { color: red; }
+      25% { color: rgb(84, 84, 105); }
+      50% { color: green; }
+      75% { color: rgb(92, 15, 147); }
+      100% { color: red; }
+}
+
+.color-changing{
+    animation: colorChange 4s infinite;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
+    font-size: large;
+}
+
+.color-changing::after{
+    content: "Visita mi github";
+}
+
+
 @media screen and (max-width: 376px) {
     #links {
         flex-direction: row;
